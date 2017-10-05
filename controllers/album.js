@@ -27,7 +27,7 @@ function getAlbums(req,res) {
         }
         else{
             if (!albums) {
-                res.status(404).send({message: 'El album no existe'});
+                res.status(404).send({message: 'No hay albums'});
             }
             else{
                 res.status(200).send(albums);        
